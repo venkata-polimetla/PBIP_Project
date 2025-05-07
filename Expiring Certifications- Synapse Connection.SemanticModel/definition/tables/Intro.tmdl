@@ -1,0 +1,69 @@
+table Intro
+	lineageTag: 669d9a7e-8e08-4052-be59-1382dc56e44b
+
+	column Column1
+		dataType: string
+		lineageTag: 622ec0f4-0f40-4581-b90a-44f3b7b4d886
+		summarizeBy: none
+		sourceColumn: Column1
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column '1. Report Description -' = "This app provides details for monitoring, driving and reporting on status of Global Technical Training Certification curriculum enrollments identified as business-critical training requirements to support Lam’s business (technical certification goals of CSBG’s Field Service Engineers). Various sheets offer specific data subsets and include status by region, account, cost center, manager, engineer, completion quarter, etc., with name and type and plan status (Certified or Enrolled) easily identified. Data is refreshed daily. Establishing bookmarks of frequently accessed data sets improves efficiency and consistency in reporting."
+		lineageTag: 8e809e7b-3c97-4515-ac2e-0d352fd47915
+		summarizeBy: none
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column '2. Business/Data Owner :' = "CSBG / Kristin Lind"
+		lineageTag: 8561c8d1-5b69-4484-b743-eb1452f19e84
+		summarizeBy: none
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column '3. BSA''s:' = "N/A"
+		lineageTag: 0651d34c-a0ee-49bf-aa2d-a6bef6b3a546
+		summarizeBy: none
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column '4. Report Developer :' = "GHR R&A Solutions Team"
+		lineageTag: 11f2f6a3-29a3-47a0-a151-da07084a1463
+		summarizeBy: none
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column '5. Page Navigation' =
+			"Dashboard: High level details on Global Technical Training Certification curriculum enrollments status (Certified or Enrolled) for selected search criteria. From this sheet, it is easy to drill down into more specific data sets.
+			
+			Pending Expiring Targets: Displays recently added curricula requirements for existing certifications that are not yet mandatory for certification. This sheet tracks status of incomplete remaining (new) requirements to help managers ensure they are completed before the Due Date, which will change the curricula (certification) status from Complete to Incomplete. Once these Due Date are reached, the curricula enrollment will no longer appear in this sheet and will not be distinguished from other Incomplete curricula (there is no longer an Expired status for technical certifications in the Learning Management System)"
+		lineageTag: 13df6217-fb57-4652-aac7-fd48d1301abe
+		summarizeBy: none
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	partition Intro-1773c059-1589-414e-a34e-3b4595d959cf = m
+		mode: import
+		source =
+				let
+				    Source = Table.FromRows(Json.Document(Binary.Decompress(Binary.FromText("i45WSkxMVIqNBQA=", BinaryEncoding.Base64), Compression.Deflate)), let _t = ((type nullable text) meta [Serialized.Text = true]) in type table [Column1 = _t]),
+				    #"Changed Type" = Table.TransformColumnTypes(Source,{{"Column1", type text}})
+				in
+				    #"Changed Type"
+
+	changedProperty = IsHidden
+
+	annotation PBI_ResultType = Table
+

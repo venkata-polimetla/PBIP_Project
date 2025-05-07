@@ -1,0 +1,356 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/1.7.0/schema.json",
+  "name": "4e3ae539e36c30a9b7df",
+  "position": {
+    "x": 0.87804878048780488,
+    "y": 89.5609756097561,
+    "z": 6000,
+    "height": 630.439024390244,
+    "width": 1279.3170731707319
+  },
+  "visual": {
+    "visualType": "tableEx",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Expiring Curriculum"
+                    }
+                  },
+                  "Property": "Organization"
+                }
+              },
+              "queryRef": "Student Curriculum Details Denodo.Organization"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Expiring Curriculum"
+                    }
+                  },
+                  "Property": "Region"
+                }
+              },
+              "queryRef": "Student Curriculum Details Denodo.Region"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Expiring Curriculum"
+                    }
+                  },
+                  "Property": "Cost Center"
+                }
+              },
+              "queryRef": "Student Curriculum Details Denodo.Cost Center"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Expiring Curriculum"
+                    }
+                  },
+                  "Property": "Cost Center Description"
+                }
+              },
+              "queryRef": "Expiring Curriculum.Cost Center Description",
+              "nativeQueryRef": "Cost Center Description"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Expiring Curriculum"
+                    }
+                  },
+                  "Property": "Manager"
+                }
+              },
+              "queryRef": "Student Curriculum Details Denodo.Manager"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Expiring Curriculum"
+                    }
+                  },
+                  "Property": "Engineer Type"
+                }
+              },
+              "queryRef": "Student Curriculum Details Denodo.Engineer Type"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Expiring Curriculum"
+                    }
+                  },
+                  "Property": "Employee"
+                }
+              },
+              "queryRef": "Student Curriculum Details Denodo.Employee"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Expiring Curriculum"
+                    }
+                  },
+                  "Property": "Lam ID"
+                }
+              },
+              "queryRef": "Student Curriculum Details Denodo.Lam ID"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Expiring Curriculum"
+                    }
+                  },
+                  "Property": "Hire Date"
+                }
+              },
+              "queryRef": "Student Curriculum Details Denodo.Hire Date"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Expiring Curriculum"
+                    }
+                  },
+                  "Property": "Classification"
+                }
+              },
+              "queryRef": "Student Curriculum Details Denodo.Classification"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Expiring Curriculum"
+                    }
+                  },
+                  "Property": "Plan Type"
+                }
+              },
+              "queryRef": "Employee Curriculum Details.Plan Type"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Expiring Curriculum"
+                    }
+                  },
+                  "Property": "Curriculum"
+                }
+              },
+              "queryRef": "Student Curriculum Details Denodo.Curriculum"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Expiring Curriculum"
+                    }
+                  },
+                  "Property": "Curriculum Version"
+                }
+              },
+              "queryRef": "Expiring Curriculum.Curriculum Version",
+              "nativeQueryRef": "Curriculum Version"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Expiring Curriculum"
+                    }
+                  },
+                  "Property": "Date Curriculum Assigned"
+                }
+              },
+              "queryRef": "Expiring Curriculum.Date Curriculum Assigned",
+              "nativeQueryRef": "Date Enrolled",
+              "displayName": "Date Enrolled"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Expiring Curriculum"
+                    }
+                  },
+                  "Property": "Course"
+                }
+              },
+              "queryRef": "Expiring Curriculum.Course",
+              "nativeQueryRef": "Course"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Expiring Curriculum"
+                    }
+                  },
+                  "Property": "Course Due Date"
+                }
+              },
+              "queryRef": "Expiring Curriculum.Course Due Date",
+              "nativeQueryRef": "Expiration Date",
+              "displayName": "Expiration Date"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Expiring Curriculum"
+                    }
+                  },
+                  "Property": "Days to Expiration"
+                }
+              },
+              "queryRef": "Expiring Curriculum.Days to Expiration",
+              "nativeQueryRef": "Days to Expiration"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Expiring Curriculum"
+                    }
+                  },
+                  "Property": "Course Status"
+                }
+              },
+              "queryRef": "Expiring Curriculum.Course Status",
+              "nativeQueryRef": "Course Status"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Expiring Curriculum"
+                    }
+                  },
+                  "Property": "Curriculum Status"
+                }
+              },
+              "queryRef": "Expiring Curriculum.Curriculum Status",
+              "nativeQueryRef": "Curriculum Status"
+            }
+          ]
+        }
+      },
+      "sortDefinition": {
+        "sort": [
+          {
+            "field": {
+              "Column": {
+                "Expression": {
+                  "SourceRef": {
+                    "Entity": "Expiring Curriculum"
+                  }
+                },
+                "Property": "Course"
+              }
+            },
+            "direction": "Ascending"
+          }
+        ]
+      }
+    },
+    "objects": {
+      "total": [
+        {
+          "properties": {
+            "totals": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "columnWidth": [
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "185.03053247279195D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "Expiring Curriculum.Course"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "188.45801469476896D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "Student Curriculum Details Denodo.Curriculum"
+          }
+        },
+        {
+          "properties": {
+            "value": {
+              "expr": {
+                "Literal": {
+                  "Value": "94.75862068965517D"
+                }
+              }
+            }
+          },
+          "selector": {
+            "metadata": "Student Curriculum Details Denodo.Hire Date"
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

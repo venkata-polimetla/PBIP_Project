@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "SemanticModel",
+    "displayName": "Expiring Certifications- Synapse Connection"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "a62eb705-0d33-4ac0-9ae7-dff8ef428083"
+  }
+}

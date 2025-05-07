@@ -1,0 +1,25 @@
+relationship 9fb30446-47ba-4da4-b9d3-feb69cd6fc26
+	joinOnDateBehavior: datePartOnly
+	fromColumn: 'Expiring Curriculum'.'Date Curriculum Assigned'
+	toColumn: LocalDateTable_86f65642-03da-4c35-a036-0b5a0823fe53.Date
+
+relationship 22a73c74-d76e-4f94-8a5e-5396a63ba2d2
+	joinOnDateBehavior: datePartOnly
+	fromColumn: 'Expiring Curriculum'.'Date Curriculum Completed'
+	toColumn: LocalDateTable_f6e20842-f676-4147-b211-5a9af2d41426.Date
+
+relationship 42f2a699-a69f-4a11-b368-5efbd29d2786
+	joinOnDateBehavior: datePartOnly
+	fromColumn: 'Expiring Curriculum'.'Course Due Date'
+	toColumn: LocalDateTable_ff7b0033-51e0-4890-a839-50ff88e64de5.Date
+
+relationship 73eb5219-86a5-420f-b8e2-c03a57c43d4b
+	joinOnDateBehavior: datePartOnly
+	fromColumn: 'Expiring Curriculum'.'Hire Date'
+	toColumn: LocalDateTable_961efe46-d5c4-47ad-9439-5302ce38277f.Date
+
+relationship df5211a2-bb23-4706-94ed-e94dce66c457
+	joinOnDateBehavior: datePartOnly
+	fromColumn: lms_etl_log.DWH_Insert_Date
+	toColumn: LocalDateTable_37ed2d82-e5e6-4704-98e9-aa1c65fc65e3.Date
+

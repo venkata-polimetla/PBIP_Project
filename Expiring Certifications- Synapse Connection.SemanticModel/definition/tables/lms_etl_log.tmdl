@@ -1,0 +1,85 @@
+table lms_etl_log
+	lineageTag: fb277be1-6525-4b48-85b0-44b94f7cf9ae
+
+	measure 'Last Updated' = MAX(lms_etl_log[dwh_insert_date])
+		formatString: m/d/yyyy h:nn AM/PM
+		lineageTag: 9bb74e66-3695-4a15-a5db-a62c494e2934
+
+		changedProperty = IsHidden
+
+		annotation PBI_FormatHint = {"isDateTimeCustom":true}
+
+	column object_name
+		dataType: string
+		lineageTag: 100dcd41-0987-44dc-8bd2-9b4e0a7a1b05
+		summarizeBy: none
+		sourceColumn: object_name
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column records_processed
+		dataType: int64
+		formatString: 0
+		lineageTag: 3d537998-5894-4ef1-a05e-05402dd9878d
+		summarizeBy: none
+		sourceColumn: records_processed
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = User
+
+	column Id
+		dataType: int64
+		formatString: 0
+		lineageTag: 397a7c7a-2c75-4786-abf7-e64642b22ef9
+		summarizeBy: count
+		sourceColumn: Id
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column DWH_Insert_Date
+		dataType: dateTime
+		formatString: General Date
+		lineageTag: 03769355-59ed-4654-8c8d-1cd933fb4216
+		summarizeBy: none
+		sourceColumn: DWH_Insert_Date
+
+		variation Variation
+			isDefault
+			relationship: df5211a2-bb23-4706-94ed-e94dce66c457
+			defaultHierarchy: LocalDateTable_37ed2d82-e5e6-4704-98e9-aa1c65fc65e3.'Date Hierarchy'
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column BatchID
+		dataType: int64
+		formatString: 0
+		lineageTag: 2746bbb3-3411-4cf5-aa7c-21996511a832
+		summarizeBy: count
+		sourceColumn: BatchID
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	partition lms_etl_log = m
+		mode: import
+		source =
+				let
+				    Source = Sql.Database(#"Synapse-Server", #"Synapse-DB"),
+				    lms_ETL_LMS_Log = Source{[Schema="lms",Item="ETL_LMS_Log"]}[Data]
+				in
+				    lms_ETL_LMS_Log
+
+	changedProperty = IsHidden
+
+	annotation PBI_ResultType = Table
+
+	annotation PBI_NavigationStepName = Navigation
+

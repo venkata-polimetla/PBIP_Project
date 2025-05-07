@@ -1,0 +1,34 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/1.7.0/schema.json",
+  "name": "a9287dfe98984f7c5ed8",
+  "position": {
+    "x": 10.599434391231215,
+    "y": 0,
+    "z": 0,
+    "height": 520.88649008336256,
+    "width": 769.21609582077963,
+    "tabOrder": 0
+  },
+  "visual": {
+    "visualType": "textbox",
+    "objects": {
+      "general": [
+        {
+          "properties": {
+            "paragraphs": [
+              {
+                "textRuns": [
+                  {
+                    "value": "The last version maintained on this Report was v1.1"
+                  }
+                ],
+                "listType": "ordered"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

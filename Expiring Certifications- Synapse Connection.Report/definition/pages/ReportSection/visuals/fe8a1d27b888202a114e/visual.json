@@ -1,0 +1,242 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/1.7.0/schema.json",
+  "name": "fe8a1d27b888202a114e",
+  "position": {
+    "x": 0,
+    "y": 642.39520958083835,
+    "z": 8000,
+    "height": 41.67664670658683,
+    "width": 1279.0419161676648,
+    "tabOrder": 8000
+  },
+  "visual": {
+    "visualType": "textbox",
+    "objects": {
+      "general": [
+        {
+          "properties": {
+            "paragraphs": [
+              {
+                "textRuns": [
+                  {
+                    "value": "Silk GIS COE Team -",
+                    "textStyle": {
+                      "fontWeight": "bold",
+                      "color": "#20a785"
+                    }
+                  },
+                  {
+                    "value": "GISAnalyticsCOE@lamresearch.com",
+                    "textStyle": {
+                      "color": "#4e75b2"
+                    },
+                    "url": "https://GISAnalyticsCOE@lamresearch.com "
+                  },
+                  {
+                    "value": " ",
+                    "textStyle": {},
+                    "url": "https://GISAnalyticsCOE@lamresearch.com "
+                  },
+                  {
+                    "value": "\t\t| \t\t"
+                  },
+                  {
+                    "value": "Power BI Admin -",
+                    "textStyle": {
+                      "fontWeight": "bold",
+                      "color": "#20a785"
+                    }
+                  },
+                  {
+                    "value": " ",
+                    "textStyle": {
+                      "color": "#666666"
+                    }
+                  },
+                  {
+                    "value": "PowerBIAdmin@lamresearch.com",
+                    "textStyle": {
+                      "color": "#4e75b2"
+                    },
+                    "url": "mailto:PowerBIAdmin@lamresearch.com"
+                  },
+                  {
+                    "value": " \t\t|\t\t To get Power BI Governance and Best Practices "
+                  },
+                  {
+                    "value": "Click here ",
+                    "textStyle": {},
+                    "url": "https://lamresearch.sharepoint.com/sites/SILK/SitePages/PowerBI.aspx"
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "visualContainerObjects": {
+      "border": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
+                }
+              }
+            },
+            "color": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#6CE3C6'"
+                    }
+                  }
+                }
+              }
+            },
+            "radius": {
+              "expr": {
+                "Literal": {
+                  "Value": "10D"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "lockAspect": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "title": [
+        {
+          "properties": {
+            "titleWrap": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "background": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "color": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#FFFFFF'"
+                    }
+                  }
+                }
+              }
+            },
+            "transparency": {
+              "expr": {
+                "Literal": {
+                  "Value": "0D"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "visualTooltip": [
+        {
+          "properties": {
+            "titleFontColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#FFFFFF'"
+                    }
+                  }
+                }
+              }
+            },
+            "valueFontColor": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#FFFFFF'"
+                    }
+                  }
+                }
+              }
+            },
+            "transparency": {
+              "expr": {
+                "Literal": {
+                  "Value": "0D"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "visualHeader": [
+        {
+          "properties": {
+            "transparency": {
+              "expr": {
+                "Literal": {
+                  "Value": "0D"
+                }
+              }
+            },
+            "foreground": {
+              "solid": {
+                "color": {
+                  "expr": {
+                    "Literal": {
+                      "Value": "'#242437'"
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      ],
+      "visualHeaderTooltip": [
+        {
+          "properties": {
+            "transparency": {
+              "expr": {
+                "Literal": {
+                  "Value": "0D"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

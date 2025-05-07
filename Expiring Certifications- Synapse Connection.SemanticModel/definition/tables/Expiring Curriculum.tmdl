@@ -1,0 +1,537 @@
+table 'Expiring Curriculum'
+	lineageTag: a8161020-ae9c-4dea-9dd8-9398ca017c5c
+
+	measure 'Expiring Curriculum Assignments' = DISTINCTCOUNT('Expiring Curriculum'[EmployeeCurriculumID])
+		formatString: 0
+		lineageTag: a7f26b60-7b62-4c86-b0a9-7315ad0a60a8
+
+	measure 'Distinct Curriculum' = DISTINCTCOUNT('Expiring Curriculum'[Course ID])
+		formatString: 0
+		lineageTag: a806aae6-e676-43e9-80ce-2c2c8aabf138
+
+	measure 'Field Engineers' = DISTINCTCOUNT('Expiring Curriculum'[Lam ID])
+		formatString: 0
+		lineageTag: cb9f02c7-17cc-49e7-beff-4d502d3aced0
+
+	column 'Cost Center Name'
+		dataType: string
+		lineageTag: ec4dfa09-2ce1-458b-85c5-eb506cc302da
+		summarizeBy: none
+		sourceColumn: Cost Center Name
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Ops Account'
+		dataType: string
+		lineageTag: 1b439490-0b82-4707-ad4d-1494a456993f
+		summarizeBy: none
+		sourceColumn: Ops Account
+
+		annotation SummarizationSetBy = Automatic
+
+	column Region
+		dataType: string
+		lineageTag: 354001d5-3c2e-436c-9b6e-51a242734b8e
+		summarizeBy: none
+		sourceColumn: Region
+
+		annotation SummarizationSetBy = Automatic
+
+	column EmployeeCurriculumID
+		dataType: string
+		lineageTag: d3ce48f9-52b2-4540-9abf-a555070d035b
+		summarizeBy: none
+		sourceColumn: EmployeeCurriculumID
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'User ID'
+		dataType: int64
+		formatString: 0
+		lineageTag: c0efec91-ee39-4854-846a-bc7805ad9189
+		summarizeBy: none
+		sourceColumn: User ID
+
+		annotation SummarizationSetBy = User
+
+	column 'Lam ID'
+		dataType: string
+		lineageTag: c53c1a28-a4ad-4aac-9e55-9d4157426c3f
+		summarizeBy: none
+		sourceColumn: Lam ID
+
+		annotation SummarizationSetBy = Automatic
+
+	column Employee
+		dataType: string
+		lineageTag: 1c876153-86bc-4a79-bb6e-35f7cf178f21
+		summarizeBy: none
+		sourceColumn: Employee
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Employee Email'
+		dataType: string
+		lineageTag: 31ab4f61-ed5d-4371-a50c-56634ccd4b25
+		summarizeBy: none
+		sourceColumn: Employee Email
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Employee Status'
+		dataType: string
+		lineageTag: b2e72517-cd4a-47f4-9030-c4e7f4313f17
+		summarizeBy: none
+		sourceColumn: Employee Status
+
+		annotation SummarizationSetBy = Automatic
+
+	column Country
+		dataType: string
+		lineageTag: 26c13653-c1fc-4c12-a8c5-8c55f8eee345
+		summarizeBy: none
+		sourceColumn: Country
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Cost Center'
+		dataType: string
+		lineageTag: a6001374-4a96-487a-81cd-8356fdcf1129
+		summarizeBy: none
+		sourceColumn: Cost Center
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Cost Center Description'
+		dataType: string
+		lineageTag: e03b2301-6d64-4f65-a692-36b9709fd729
+		summarizeBy: none
+		sourceColumn: Cost Center Description
+
+		annotation SummarizationSetBy = Automatic
+
+	column Classification
+		dataType: string
+		lineageTag: cac2fc84-93b7-4d67-85dc-cf8f7c5351f6
+		summarizeBy: none
+		sourceColumn: Classification
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Job Code'
+		dataType: string
+		lineageTag: 16238e9c-c019-49a4-8c22-2c06f1899241
+		summarizeBy: none
+		sourceColumn: Job Code
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Job Title'
+		dataType: string
+		lineageTag: 8d529c00-90f7-4245-8e33-b8e6e28e33e4
+		summarizeBy: none
+		sourceColumn: Job Title
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Engineer Type'
+		dataType: string
+		lineageTag: e98f44cf-36c4-4591-a3ee-2b53a0cb7da0
+		summarizeBy: none
+		sourceColumn: Engineer Type
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Manager ID'
+		dataType: string
+		lineageTag: 72c2bb40-f240-4388-93c3-92ecb10c648b
+		summarizeBy: none
+		sourceColumn: Manager ID
+
+		annotation SummarizationSetBy = Automatic
+
+	column Manager
+		dataType: string
+		lineageTag: 98609bb5-9279-4928-b5f2-ac3e60ed9dc4
+		summarizeBy: none
+		sourceColumn: Manager
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Manager Email'
+		dataType: string
+		lineageTag: 7c65707b-f8dd-419d-9d8f-21a7ade806c2
+		summarizeBy: none
+		sourceColumn: Manager Email
+
+		annotation SummarizationSetBy = Automatic
+
+	column Location
+		dataType: string
+		lineageTag: 098aebb3-0351-4d87-8d30-d254ab8496aa
+		summarizeBy: none
+		sourceColumn: Location
+
+		annotation SummarizationSetBy = Automatic
+
+	column Organization
+		dataType: string
+		lineageTag: 14599e86-a661-42fb-bc7d-e9bede4c9b84
+		summarizeBy: none
+		sourceColumn: Organization
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Curriculum Record ID'
+		dataType: string
+		lineageTag: fad7e9a6-d3ec-4a82-976f-d88f15b38d56
+		summarizeBy: none
+		sourceColumn: Curriculum Record ID
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Course ID'
+		dataType: string
+		lineageTag: b9a8286e-90fc-4297-a94f-47941c78e3ca
+		summarizeBy: none
+		sourceColumn: Course ID
+
+		annotation SummarizationSetBy = Automatic
+
+	column Curriculum
+		dataType: string
+		lineageTag: 1ff8e8f6-2a35-452c-a4ad-bf4b40fb0abc
+		summarizeBy: none
+		sourceColumn: Curriculum
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Curriculum Version'
+		dataType: string
+		lineageTag: 523f5073-f655-42fc-9491-8b0d70b38b8d
+		summarizeBy: none
+		sourceColumn: Curriculum Version
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Curriculum Type'
+		dataType: string
+		lineageTag: 8a7bacea-8aa9-4e86-974c-c8ff9a4e0e64
+		summarizeBy: none
+		sourceColumn: Curriculum Type
+
+		annotation SummarizationSetBy = Automatic
+
+	column Level
+		dataType: string
+		lineageTag: f43c8eca-60cd-42a0-815e-7d690e4815b3
+		summarizeBy: none
+		sourceColumn: Level
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Target Audience'
+		dataType: string
+		lineageTag: 0e9ce273-0ae4-4a22-91e7-f209e6d5a61c
+		summarizeBy: none
+		sourceColumn: Target Audience
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Product Group'
+		dataType: string
+		lineageTag: 907b66d0-9546-459e-a588-00e7f3437f08
+		summarizeBy: none
+		sourceColumn: Product Group
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Plan Type'
+		dataType: string
+		lineageTag: f6e6e5cd-5c95-4ea9-8fda-14b76d944fa3
+		summarizeBy: none
+		sourceColumn: Plan Type
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Date Curriculum Assigned'
+		dataType: dateTime
+		formatString: mm/dd/yyyy
+		lineageTag: d2b9d56d-ebdf-410d-8c8b-6e1051761365
+		summarizeBy: none
+		sourceColumn: Date Curriculum Assigned
+
+		variation Variation
+			isDefault
+			relationship: 9fb30446-47ba-4da4-b9d3-feb69cd6fc26
+			defaultHierarchy: LocalDateTable_86f65642-03da-4c35-a036-0b5a0823fe53.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isDateTimeCustom":true}
+
+	column 'Date Curriculum Completed'
+		dataType: dateTime
+		formatString: mm/dd/yyyy
+		lineageTag: 34a2678f-8268-4209-a6e5-30822f6f9631
+		summarizeBy: none
+		sourceColumn: Date Curriculum Completed
+
+		variation Variation
+			isDefault
+			relationship: 22a73c74-d76e-4f94-8a5e-5396a63ba2d2
+			defaultHierarchy: LocalDateTable_f6e20842-f676-4147-b211-5a9af2d41426.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isDateTimeCustom":true}
+
+	column 'EU Region'
+		dataType: string
+		lineageTag: 4151c32c-2642-44cf-b3dd-c0811f03daa2
+		summarizeBy: none
+		sourceColumn: EU Region
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Curriculum ID'
+		dataType: string
+		lineageTag: 80901593-f893-4f9a-8e27-98d0bf14297f
+		summarizeBy: none
+		sourceColumn: Curriculum ID
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Curriculum Status'
+		dataType: string
+		lineageTag: 980ecfa6-1edc-4465-90fb-3154a4452961
+		summarizeBy: none
+		sourceColumn: Curriculum Status
+
+		annotation SummarizationSetBy = Automatic
+
+	column Course
+		dataType: string
+		lineageTag: f9c13cf7-8c93-45ab-91f3-9b5a91e59832
+		summarizeBy: none
+		sourceColumn: Course
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Delivery Method'
+		dataType: string
+		lineageTag: dd30dfd5-178a-4cde-bd25-8653f1e6dd44
+		summarizeBy: none
+		sourceColumn: Delivery Method
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Course Status'
+		dataType: string
+		lineageTag: 9caaa481-660c-4275-90a4-4d9871935279
+		summarizeBy: none
+		sourceColumn: Course Status
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Course Due Date'
+		dataType: dateTime
+		formatString: mm/dd/yyyy
+		lineageTag: 4c64861f-68e3-4f68-9658-cc11ad5179d4
+		summarizeBy: none
+		sourceColumn: Course Due Date
+
+		variation Variation
+			isDefault
+			relationship: 42f2a699-a69f-4a11-b368-5efbd29d2786
+			defaultHierarchy: LocalDateTable_ff7b0033-51e0-4890-a839-50ff88e64de5.'Date Hierarchy'
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isDateTimeCustom":true}
+
+	column 'Days to Expiration' = FORMAT(DATEDIFF(TODAY(), 'Expiring Curriculum'[Course Due Date], DAY), "")
+		lineageTag: b61ed5ef-1ca9-4a10-8f81-350bfbc46a9b
+		summarizeBy: none
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Hire Date'
+		dataType: dateTime
+		formatString: Short Date
+		lineageTag: ae43f514-c6bd-445b-a14d-872cfea99918
+		summarizeBy: none
+		sourceColumn: Hire Date
+
+		variation Variation
+			isDefault
+			relationship: 73eb5219-86a5-420f-b8e2-c03a57c43d4b
+			defaultHierarchy: LocalDateTable_961efe46-d5c4-47ad-9439-5302ce38277f.'Date Hierarchy'
+
+		changedProperty = DataType
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation UnderlyingDateTimeDataType = Date
+
+	column curricula_guid
+		dataType: string
+		lineageTag: 57cc4f26-722b-4a41-92d9-a77cf5369621
+		summarizeBy: none
+		sourceColumn: curricula_guid
+
+		annotation SummarizationSetBy = Automatic
+
+	column section_id
+		dataType: string
+		lineageTag: 126678c0-2b21-47ad-ad46-bbc148d50ac6
+		summarizeBy: none
+		sourceColumn: section_id
+
+		annotation SummarizationSetBy = Automatic
+
+	column lo_type
+		dataType: string
+		lineageTag: 6084067d-d467-4428-ad16-bf2213aa9aef
+		summarizeBy: none
+		sourceColumn: lo_type
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Curriculum Active'
+		dataType: string
+		lineageTag: b855f6b6-e4d0-4370-8b9c-e37b9dff4344
+		summarizeBy: none
+		sourceColumn: Curriculum Active
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Complete Curriculum By'
+		dataType: string
+		lineageTag: 78ceb780-2df6-4692-874a-159390ec5871
+		summarizeBy: none
+		sourceColumn: Complete Curriculum By
+
+		annotation SummarizationSetBy = Automatic
+
+	partition 'Expiring Curriculum-29dbf021-20d1-4f0d-9f1b-514bad71c9b4' = m
+		mode: import
+		queryGroup: 'Employee Curriculum'
+		source = ```
+				let
+				    Source = Sql.Database(#"Synapse-Server", #"Synapse-DB", [Query="
+				SELECT  DISTINCT
+				                CURR.transc_user_id,
+				                CURR.user_ref,
+				                CURR.user_name,
+				                CURR.user_email,
+				                CURR.usl_title,
+				                CURR.user_country,
+				                CURR.costcenter_ref,
+				                CURR.costcenter_desc,
+				                CURR.employee_type,                                 
+				                CURR.job_code_ref,
+				                CURR.job_code_desc,
+				                CURR.engineer_type,
+				                CURR.user_hire_dt_last,
+				                CURR.user_mgr_ref,
+				                CURR.user_mgr_name,
+				                CURR.user_mgr_email,
+				                CURR.location_desc,
+				                CURR.org_desc,
+				                CURR.lo_object_id,
+				                CURR.curricula_guid,
+				                CURR.course_id AS curriculum_id,
+				                CURR.lo_title,
+				                CURR.lo_version,
+				                CURR.curricula_type,
+				                COUR.lo_active,
+				                CURR.curriculum_level,
+				                CURR.target_audience,
+				                CURR.product_group,
+				                CURR.plan_type,
+				                CURR.user_lo_assigned_dt_dateonly,
+				                CURR.qedd_due_date,
+				                CURR.user_lo_comp_dt_dateonly,
+				                CURR.status AS curriculum_status,
+				                COUR.course_id,
+				                COUR.cp__curriculum_section_object_id AS section_id,
+				                COUR.lo_title AS course_title,
+				                COUR.calc_class_type,
+				                COUR.status AS course_status,
+				                COUR.cp__curriculum_due_date AS course_due_date,
+				                COUR.lo_type
+				        FROM    lms.RPT_lms_summary_gt2018 AS CURR INNER JOIN
+				                lms.RPT_transcript_src_curriculum_summary AS COUR ON CURR.user_ref = COUR.user_ref AND CURR.lo_object_id = COUR.cp__curriculum_object_id LEFT OUTER JOIN
+				                lms.RPT_CurriculumTranscriptSectionStatus AS SECT ON CURR.lo_object_id = SECT.cstr__curriculum_object_id
+				                																AND COUR.cp__curriculum_section_object_id = SECT.cp__curriculum_section_object_id
+				                                                                                AND COUR.cp__user_id = SECT.cp__user_id		
+				        WHERE	CURR.lo_type = 'Curriculum' -- Object type is a Curriculum
+				                AND CURR.usl_title = 'Active' -- Employee us Active
+				                AND CURR.curricula_type IN('Field Service (CSFS)','New Products (GTTHW_NEWPRODUCTS)') -- Curriculum type 'Field Service (CSFS)' or 'New Products (GTTHW_NEWPRODUCTS)'
+				                AND CURR.course_id != 'TTFSEFUND' -- Do not include FSE Fundamentals curriculum
+				                AND CURR.product_group IN('DEP','CLEAN','ETCH','PACE') -- Product Group is 'DEP','CLEAN','ETCH', or 'PACE'
+				                AND CURR.is_latest_version_on_transcript = 1 -- Curriculum assignment record is for latest version of the curriculum
+				                AND CURR.curriculum_valid_version = 0 -- Not the reporting version for the curriculum assignment is not the
+				                AND COUR.lo_active = 'Y' -- Curriculum course item is Active
+				                AND COUR.lo_type IN('Online Class','Event') -- Curriculum course item is a Class or Event
+				                AND COUR.status NOT IN('Completed','Completed (Equivalent)') -- Curriculum course item is incomplete
+				                AND SECT.cstr__curriculum_object_id IS NULL -- Curriculum course item does not belong to a completed section
+					"]),
+				    
+				    #"Renamed Columns" = Table.RenameColumns(Source,{
+						{"transc_user_id", "User ID"},
+				        {"user_ref", "Lam ID"}, 
+				        {"user_name", "Employee"}, 
+				        {"user_email", "Employee Email"}, 
+				        {"usl_title", "Employee Status"}, 
+				        {"user_country", "Country"}, 
+				        {"costcenter_ref", "Cost Center"}, 
+				        {"costcenter_desc", "Cost Center Description"}, 
+				        {"employee_type", "Classification"}, 
+				        {"job_code_ref", "Job Code"}, 
+				        {"job_code_desc", "Job Title"}, 
+				        {"engineer_type", "Engineer Type"},  
+				        {"user_hire_dt_last", "Hire Date"}, 
+				        {"user_mgr_ref", "Manager ID"},  
+				        {"user_mgr_name", "Manager"}, 
+				        {"user_mgr_email", "Manager Email"},
+				        {"location_desc", "Location"}, 
+				        {"org_desc", "Organization"},
+						{"lo_title", "Curriculum"}, 
+				        {"curriculum_id", "Curriculum ID"},
+						{"lo_object_id", "Curriculum Record ID"},		
+						{"lo_version", "Curriculum Version"},
+				        {"curricula_type", "Curriculum Type"},
+				        {"lo_active", "Curriculum Active"}, 
+				        {"curriculum_level", "Level"}, 
+				        {"target_audience", "Target Audience"}, 
+				        {"product_group", "Product Group"},
+						{"plan_type", "Plan Type"},
+				        {"user_lo_assigned_dt_dateonly", "Date Curriculum Assigned"}, 
+				        {"qedd_due_date", "Complete Curriculum By"}, 
+				        {"user_lo_comp_dt_dateonly", "Date Curriculum Completed"},
+				        {"curriculum_status", "Curriculum Status"},
+				        {"course_id", "Course ID"},
+						{"course_title", "Course"},
+						{"calc_class_type", "Delivery Method"},
+						{"course_status", "Course Status"},
+						{"course_due_date", "Course Due Date"}
+						
+				    }),
+				
+					#"Inserted Merged Column Final" = Table.AddColumn(#"Renamed Columns", "EmployeeCurriculumID", each Text.Combine({[#"Lam ID"], [#"Curriculum ID"]}, "_"), type text),
+					
+					#"Reordered Columns" = Table.ReorderColumns(#"Inserted Merged Column Final",{
+						"EmployeeCurriculumID"
+					}),
+				    #"Merged Queries" = Table.NestedJoin(#"Reordered Columns", {"Cost Center"}, #"Cost Center Data", {"Cost Center"}, "Cost Center Data", JoinKind.LeftOuter),
+				    #"Expanded Cost Center Data" = Table.ExpandTableColumn(#"Merged Queries", "Cost Center Data", {"Cost Center Name", "Ops Account", "Region", "EU Region"}, {"Cost Center Name", "Ops Account", "Region", "EU Region"})	
+				in
+				    #"Expanded Cost Center Data"
+				```
+
+	annotation PBI_ResultType = Table
+
+	annotation PBI_NavigationStepName = Navigation
+

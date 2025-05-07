@@ -1,0 +1,72 @@
+table 'Cost Center Data'
+	isHidden
+	lineageTag: 25155ee3-0085-4bfb-bf20-a7a2b463321b
+
+	column 'Ops Account'
+		dataType: string
+		isHidden
+		lineageTag: 076a565b-47f7-4a50-bb3b-73e7c3684375
+		summarizeBy: none
+		sourceColumn: Ops Account
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Cost Center'
+		dataType: string
+		isHidden
+		lineageTag: 901405b2-c15b-4012-88b8-0130b1d5e451
+		summarizeBy: none
+		sourceColumn: Cost Center
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'Cost Center Name'
+		dataType: string
+		isHidden
+		lineageTag: cdcc1155-8330-462e-b28a-84ee856b3766
+		summarizeBy: none
+		sourceColumn: Cost Center Name
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column Region
+		dataType: string
+		isHidden
+		lineageTag: b8fdbed1-f5b4-4236-84f8-5118d03605df
+		summarizeBy: none
+		sourceColumn: Region
+
+		changedProperty = IsHidden
+
+		annotation SummarizationSetBy = Automatic
+
+	column 'EU Region'
+		dataType: string
+		lineageTag: 97035684-ecef-4d69-9358-a202836f9749
+		summarizeBy: none
+		sourceColumn: EU Region
+
+		annotation SummarizationSetBy = Automatic
+
+	partition 'Cost Center Data-1c0aebc7-2029-4d2f-8a9b-5de5c02ce171' = m
+		mode: import
+		queryGroup: 'Employee Curriculum'
+		source =
+				let
+				    Source = Table.FromRows(Json.Document(Binary.Decompress(Binary.FromText("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", BinaryEncoding.Base64), Compression.Deflate)), let _t = ((type nullable text) meta [Serialized.Text = true]) in type table [#"Cost Center" = _t, #"Cost Center Name" = _t, #"Ops Account" = _t, Region = _t, #"EU Region" = _t]),
+				    #"Changed Type" = Table.TransformColumnTypes(Source,{{"Cost Center", type text}, {"Cost Center Name", type text}, {"Ops Account", type text}, {"Region", type text}, {"EU Region", type text}})
+				in
+				    #"Changed Type"
+
+	changedProperty = IsHidden
+
+	annotation PBI_ResultType = Table
+
+	annotation PBI_NavigationStepName = Navigation
+

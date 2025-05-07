@@ -1,0 +1,26 @@
+expression Denodo = "PRD_Denodo" meta [IsParameterQuery=true, List={"DEV_Denodo", "QA_Denodo", "PRD_Denodo"}, DefaultValue="DEV_Denodo", Type="Text", IsParameterQueryRequired=true]
+	lineageTag: 069be1ce-fa6b-4704-8ded-28eb124ae1b4
+
+	annotation PBI_ResultType = Text
+
+	annotation PBI_NavigationStepName = Navigation
+
+expression CostCenterData = "\\fre-filer02\PowerBIStore\Global_HR\OpsAcctRegionMapping.xlsx" meta [IsParameterQuery=true, Type="Text", IsParameterQueryRequired=true]
+	lineageTag: df0392c4-9e37-4a34-bdf4-dc56647ef8b3
+
+	annotation PBI_ResultType = Text
+
+expression Synapse-Server = "pcazsqldfab01.database.windows.net" meta [IsParameterQuery=true, List={"dcazsqldfab01.database.windows.net", "qcazsqldfab01.database.windows.net", "pcazsqldfab01.database.windows.net"}, DefaultValue="dcazsqldfab01.database.windows.net", Type="Text", IsParameterQueryRequired=true]
+	lineageTag: c6989c6b-b382-4ac7-885b-c611b7f1e159
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Text
+
+expression Synapse-DB = "syn-lam-usw-dfab-prd-eng-001" meta [IsParameterQuery=true, List={"syn-lam-usw-dfab-dev-eng-001", "syn-lam-usw-dfab-qa-eng-001", "syn-lam-usw-dfab-prd-eng-001"}, DefaultValue="syn-lam-usw-dfab-dev-eng-001", Type="Text", IsParameterQueryRequired=true]
+	lineageTag: d7057e2b-3dde-40d6-ab9a-45dcfd39bad4
+
+	annotation PBI_NavigationStepName = Navigation
+
+	annotation PBI_ResultType = Text
+

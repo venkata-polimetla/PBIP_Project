@@ -1,0 +1,431 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/1.7.0/schema.json",
+  "name": "443a7e83b3b83811849f",
+  "position": {
+    "x": 640.97560975609758,
+    "y": 130.82926829268294,
+    "z": 6000,
+    "height": 405.65853658536588,
+    "width": 639.219512195122,
+    "tabOrder": 6000
+  },
+  "visual": {
+    "visualType": "textbox",
+    "objects": {
+      "general": [
+        {
+          "properties": {
+            "paragraphs": [
+              {
+                "textRuns": [
+                  {
+                    "value": "Technical Details - ",
+                    "textStyle": {
+                      "fontWeight": "bold",
+                      "fontSize": "14pt",
+                      "color": "#20a785"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": ""
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Connection Typ",
+                    "textStyle": {
+                      "fontWeight": "bold",
+                      "color": "#242437"
+                    }
+                  },
+                  {
+                    "value": "e",
+                    "textStyle": {
+                      "fontWeight": "bold",
+                      "color": "#666666"
+                    }
+                  },
+                  {
+                    "value": " ",
+                    "textStyle": {
+                      "fontFamily": "Georgia",
+                      "color": "#666666"
+                    }
+                  },
+                  {
+                    "value": "\t\t\t\t\t"
+                  },
+                  {
+                    "value": ":",
+                    "textStyle": {
+                      "fontFamily": "Georgia",
+                      "color": "#666666"
+                    }
+                  },
+                  {
+                    "value": " ",
+                    "textStyle": {
+                      "fontFamily": "Georgia",
+                      "fontSize": "10pt"
+                    }
+                  },
+                  {
+                    "value": "Import",
+                    "textStyle": {
+                      "fontFamily": "Georgia"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Source System Name ",
+                    "textStyle": {
+                      "fontWeight": "bold",
+                      "color": "#242437"
+                    }
+                  },
+                  {
+                    "value": "\t\t\t:"
+                  },
+                  {
+                    "value": " JourneyHub",
+                    "textStyle": {
+                      "fontWeight": "bold",
+                      "fontFamily": "Georgia",
+                      "color": "#242437"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Server Name",
+                    "textStyle": {
+                      "fontWeight": "bold",
+                      "color": "#242437"
+                    }
+                  },
+                  {
+                    "value": " ",
+                    "textStyle": {
+                      "fontWeight": "bold",
+                      "fontFamily": "Georgia",
+                      "color": "#242437"
+                    }
+                  },
+                  {
+                    "value": "\t\t\t\t\t\t\t:"
+                  },
+                  {
+                    "value": " Denodo",
+                    "textStyle": {
+                      "fontWeight": "bold",
+                      "fontFamily": "Georgia",
+                      "color": "#242437"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Database/Schema",
+                    "textStyle": {
+                      "fontWeight": "bold",
+                      "color": "#242437"
+                    }
+                  },
+                  {
+                    "value": " ",
+                    "textStyle": {
+                      "fontWeight": "bold",
+                      "fontFamily": "Georgia",
+                      "color": "#242437"
+                    }
+                  },
+                  {
+                    "value": "\t\t\t\t: sdal/sdal"
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": ""
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Database table/query used",
+                    "textStyle": {
+                      "fontWeight": "bold",
+                      "color": "#242437"
+                    }
+                  },
+                  {
+                    "value": " ",
+                    "textStyle": {
+                      "color": "#666666"
+                    }
+                  },
+                  {
+                    "value": "\t"
+                  },
+                  {
+                    "value": ":",
+                    "textStyle": {
+                      "fontFamily": "Georgia",
+                      "color": "#666666"
+                    }
+                  },
+                  {
+                    "value": " ",
+                    "textStyle": {
+                      "fontFamily": "Georgia"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "lms.RPT_lms_summary - Curriculum completion data"
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "lms.RPT_csbg_course_count "
+                  },
+                  {
+                    "value": "- Curriculum course count data",
+                    "textStyle": {
+                      "fontSize": "14.6667px"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "lms.RPT_ocl_summary - "
+                  },
+                  {
+                    "value": "Task sheet completion data",
+                    "textStyle": {
+                      "fontSize": "14.6667px"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "lms.RPT_curriculum_structure - Curriculum requirement structure data"
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "lms.RPT_training_local - Curriculum structure details"
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": ""
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Performance/Response Time",
+                    "textStyle": {
+                      "fontWeight": "bold",
+                      "color": "#242437"
+                    }
+                  },
+                  {
+                    "value": ":",
+                    "textStyle": {
+                      "fontWeight": "bold",
+                      "fontFamily": "Georgia",
+                      "color": "#242437"
+                    }
+                  },
+                  {
+                    "value": " ",
+                    "textStyle": {
+                      "fontFamily": "Georgia",
+                      "color": "#242437"
+                    }
+                  },
+                  {
+                    "value": "2-3min load time"
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": ""
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Data Models",
+                    "textStyle": {
+                      "fontWeight": "bold",
+                      "color": "#242437"
+                    }
+                  },
+                  {
+                    "value": "\t"
+                  },
+                  {
+                    "value": " :",
+                    "textStyle": {
+                      "fontWeight": "bold",
+                      "fontFamily": "Georgia",
+                      "color": "#242437"
+                    }
+                  },
+                  {
+                    "value": " ",
+                    "textStyle": {
+                      "fontWeight": "bold",
+                      "fontFamily": "Georgia",
+                      "fontSize": "10pt"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "lms.RPT_lms_summary Left Join lms_csbg_course_count using key user_ref and course_id/curricula_id"
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "lms.RPT_lms_summary Inner Join ",
+                    "textStyle": {
+                      "fontSize": "14.6667px"
+                    }
+                  },
+                  {
+                    "value": "lms_ocl_summary using key curriculumid/course_id"
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "lms.RPT_lms_summary Left Join "
+                  },
+                  {
+                    "value": "lms_ocl_summary using key ",
+                    "textStyle": {
+                      "fontSize": "14.6667px"
+                    }
+                  },
+                  {
+                    "value": "mappingid and user_ref/userid"
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": ""
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": ""
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Production Workspace :",
+                    "textStyle": {
+                      "fontWeight": "bold",
+                      "color": "#242437"
+                    }
+                  },
+                  {
+                    "value": " ",
+                    "textStyle": {
+                      "fontWeight": "bold",
+                      "fontSize": "10pt",
+                      "color": "#666666"
+                    }
+                  },
+                  {
+                    "value": "PRD_WS_GHR_DEVELOP",
+                    "textStyle": {
+                      "fontSize": "11pt"
+                    }
+                  }
+                ]
+              },
+              {
+                "textRuns": [
+                  {
+                    "value": "Release Date :",
+                    "textStyle": {
+                      "fontWeight": "bold",
+                      "color": "#242437"
+                    }
+                  },
+                  {
+                    "value": " 5/8/2023"
+                  }
+                ]
+              }
+            ]
+          }
+        }
+      ]
+    },
+    "visualContainerObjects": {
+      "border": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  }
+}
